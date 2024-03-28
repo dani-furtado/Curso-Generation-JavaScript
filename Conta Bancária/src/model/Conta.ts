@@ -17,44 +17,44 @@ export class Conta {
 	}
 
 
-	public get_numero(): number {
+	public get numero(): number {
 		return this._numero;
 	}
 
-	public get_agencia(): number {
+	public get agencia(): number {
 		return this._agencia;
 	}
 
-	public get_tipo(): number {
+	public get tipo(): number {
 		return this._tipo;
 	}
 
-	public get_titular(): string {
+	public get titular(): string {
 		return this._titular;
 	}
 
-	public get_saldo(): number {
+	public get saldo(): number {
 		return this._saldo;
 	}
 
-	public set_numero(value: number) {
-		this._numero = value;
+	public set numero(numero: number) {
+		this._numero = numero;
 	}
 
-	public set_agencia(value: number) {
-		this._agencia = value;
+	public set agencia(agencia: number) {
+		this._agencia = agencia;
 	}
 
-	public set_tipo(value: number) {
-		this._tipo = value;
+	public set tipo(tipo: number) {
+		this._tipo = tipo;
 	}
 
-	public set_titular(value: string) {
-		this._titular = value;
+	public set titular(titular: string) {
+		this._titular = titular;
 	}
 
-	public set_saldo(value: number) {
-		this._saldo = value;
+	public set saldo(saldo: number) {
+		this._saldo = saldo;
 	}
     
 
