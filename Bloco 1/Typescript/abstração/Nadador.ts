@@ -1,0 +1,18 @@
+import { Atleta } from "./Atleta";
+
+export class Nadador extends Atleta {
+
+
+	constructor(name: string) {
+        super(name);
+	}
+
+    public cansou(): void {
+        console.log("Cansei de nadar!");
+    }
+
+    public nadar(): void{
+        console.log("Nadando...");
+    }
+
+}
