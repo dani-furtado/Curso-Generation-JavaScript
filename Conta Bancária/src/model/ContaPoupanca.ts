@@ -10,12 +10,12 @@ export class ContaPoupanca extends Conta {
 		this._aniversario = aniversario;
 	}
 
-	public get aniversario(): number {
+	public get aniversario() {
 		return this._aniversario;
 	}
 
-	public set aniversario(value: number) {
-		this._aniversario = value;
+	public set aniversario(aniversario: number) {
+		this._aniversario = aniversario;
 	}
 
     public visualizar(): void {

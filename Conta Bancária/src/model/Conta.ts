@@ -72,12 +72,12 @@ export abstract class Conta {
 
     //Método especifico DEPOSITAR
     public depositar(valor: number): void{
-        this._saldo = this._saldo + valor
+        this._saldo = this._saldo + valor;
     }
 
     public visualizar(): void{
 
-        let tipo: string = " ";
+        let tipo: string = "";
         
         switch (this._tipo){
             case 1: 
@@ -92,9 +92,9 @@ export abstract class Conta {
         console.log("\n - Dados da conta - ")
         console.log(`Número da conta: ${this._numero}`)
         console.log(`Número da agência: ${this._agencia}`)
-        console.log(`Tipo da conta: ${this._tipo}`)
+        console.log(`Tipo da conta: ${tipo}`)
         console.log(`Títular da conta: ${this._titular}`)
-        console.log(`Saldo da conta: ${this._saldo}\n`)
+        console.log(`Saldo da conta: ${this._saldo.toFixed(2)}\n`)
 
     }
 

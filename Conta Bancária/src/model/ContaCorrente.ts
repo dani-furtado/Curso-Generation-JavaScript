@@ -11,17 +11,17 @@ export class ContaCorrente extends Conta {
 	}
 
 
-	public get limite(): number {
+	public get limite() {
 		return this._limite;
 	}
 
-	public set limite(value: number) {
-		this._limite = value;
+	public set limite(limite: number) {
+		this._limite = limite;
 	}
     
     public sacar(valor: number): boolean{
         if ((this.saldo + this._limite) < valor) {
-            console.log("Saldo insuficiente!")
+            console.log("Saldo insuficiente!");
             return false;
         }
 
@@ -32,7 +32,7 @@ export class ContaCorrente extends Conta {
 
     public visualizar(): void {
         super.visualizar();
-        console.log("Limite é: " + this._limite)
+        console.log("Limite é: " + this._limite.toFixed(2));
     }
     
 }
