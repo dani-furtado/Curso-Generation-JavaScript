@@ -2,6 +2,14 @@ import { Conta } from "../model/Conta";
 import { ContaRepository } from "../repository/ContaRepository";
 
 export class ContaController implements ContaRepository {
+    
+    procurarPorTitular(titular: string) {
+        let listaContasPorTitular = this.listaContas.filter(c => c.titular.toUpperCase().includes(titular.toUpperCase()))
+
+        for (let conta of listaContasPorTitular){
+            conta.visualizar();
+        }
+    }
 
     private listaContas: Array<Conta> = new Array<Conta>();
         numero: number = 0;

@@ -33,12 +33,13 @@ export function main () {
         console.log("                                                                   Opção 6: Sacar");
         console.log("                                                                   Opção 7: Depositar");
         console.log("                                                                   Opção 8: Transferir");
-        console.log("                                                                   Opção 9: Sair", colors.reset);
+        console.log("                                                                   Opção 9: Buscar conta por titular");
+        console.log("                                                                   Opção 0: Sair", colors.reset);
 
         console.log(colors.fg.blue, "\n                                                            Qual opção você deseja prosseguir?", colors.reset)
         opcao = readlinesync.questionInt("")
 
-        if (opcao == 9) {
+        if (opcao == 0) {
             console.log("Banco DCF agradece seu acesso! Esperamos ajuda-lo em breve novamente.");
             sobre();
             process.exit(0);
@@ -155,6 +156,14 @@ export function main () {
                     valor =  readlinesync.questionFloat("");
 
                     contas.transferir(numero, numeroDestino, valor);
+                keyPress()
+                break;
+            case 9: console.log("Consultar conta por titular");
+                    console.log("Digite o nome do titular: ");
+                    titular = readlinesync.question("");
+
+                    contas.procurarPorTitular(titular);
+
                 keyPress()
                 break;
             default: console.log("Opção inválida")
