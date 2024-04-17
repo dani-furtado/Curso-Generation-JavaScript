@@ -4,6 +4,12 @@
     "@types/readline-sync": "^1.4.8"
   },
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "@nestjs/typeorm": "^10.0.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "eslint": "^9.0.0",
+    "mysql2": "^3.9.5",
+    "readline-sync": "^1.4.10",
+    "typeorm": "^0.3.20"
   }
 }
