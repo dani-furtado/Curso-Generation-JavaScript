@@ -24,3 +24,8 @@ html {
     margin: 5%;
 }
 
+#botao2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
